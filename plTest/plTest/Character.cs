@@ -89,8 +89,6 @@ namespace plTest
                 Random rnd = new Random();
                 value = rnd.Next(0, 2);
             }
-            Console.WriteLine(value);
-            Console.WriteLine(this.is_dodge);
             if (value == 1)
                 return;
             double def_head = 1;

@@ -43,3 +43,18 @@ C:\code\game_4s\plTest\plTest\obj\Debug\net6.0\refint\plTest.dll
 C:\code\game_4s\plTest\plTest\obj\Debug\net6.0\plTest.pdb
 C:\code\game_4s\plTest\plTest\obj\Debug\net6.0\plTest.genruntimeconfig.cache
 C:\code\game_4s\plTest\plTest\obj\Debug\net6.0\ref\plTest.dll
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\bin\Debug\net6.0\plTest.exe
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\bin\Debug\net6.0\plTest.deps.json
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\bin\Debug\net6.0\plTest.runtimeconfig.json
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\bin\Debug\net6.0\plTest.dll
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\bin\Debug\net6.0\plTest.pdb
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.csproj.AssemblyReference.cache
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.AssemblyInfoInputs.cache
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.AssemblyInfo.cs
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.csproj.CoreCompileInputs.cache
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.dll
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\refint\plTest.dll
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.pdb
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\plTest.genruntimeconfig.cache
+C:\Users\mszub\OneDrive\Рабочий стол\game\plTest\plTest\obj\Debug\net6.0\ref\plTest.dll

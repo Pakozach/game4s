@@ -72,11 +72,11 @@ namespace plTest
             {
                 return new UnOpNode(operatorUn, this.parseFormula());
             }
-            
             Console.WriteLine($"Error: Ожидается унарный оператор на {this.pos} позиции");
             System.Environment.Exit(0);
             return null;
         }
+
 
         ExpressionNode parseBrackets()
         {

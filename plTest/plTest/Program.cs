@@ -39,6 +39,7 @@ int battle(Character guy, Lexer lexer)
             if (guy.enemy_dead() == 1)
             {
                 Console.WriteLine("You defeated the enemy!");
+                read_file("Victory_scenario.txt");
                 return 1;
             }
             Console.WriteLine("------------------------------------------------------------------------------");
@@ -75,19 +76,24 @@ void read_file(string name)
     }
     finally
     {
-        Console.WriteLine("Executing finally block.");
+        //Console.WriteLine("Executing finally block.");
     }
 }
 
-read_file("C:\\code\\game_4s\\plTest\\plTest\\Hello_Dialog.txt");
-
+read_file("Hello_Dialog.txt");
 Console.WriteLine("START!");
 
 const string code =
 @" {
+    IF(enemyheadhp > 0)
+    {
+        POW_ATK(0);
+    } ELSE {
+        POW_ATK(1);
+    }
     DEF(1);
-    POW_ATK(1);
-   }
+    DODGE(0);
+    }
 "
 ;
 
@@ -97,11 +103,12 @@ lexer.LexAnalizator();
 int inc_damage = 1;
 int lvl = 1;
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 100; i++)
 {
     Character guy = new Character(50, 100, 50 * lvl, 100 * lvl, 5 * inc_damage);
     if (battle(guy, lexer) == 0)
     {
+        read_file("Defeat_scenario.txt");
         Console.WriteLine("You stopped at " + lvl + " lvl");
         break;
     }
