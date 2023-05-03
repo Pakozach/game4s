@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mszub\\OneDrive\\Рабочий стол\\game\\plTest\\plTest\\plTest.csproj": {}
+    "C:\\code\\game_4s\\plTest\\plTest\\plTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mszub\\OneDrive\\Рабочий стол\\game\\plTest\\plTest\\plTest.csproj": {
+    "C:\\code\\game_4s\\plTest\\plTest\\plTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mszub\\OneDrive\\Рабочий стол\\game\\plTest\\plTest\\plTest.csproj",
+        "projectUniqueName": "C:\\code\\game_4s\\plTest\\plTest\\plTest.csproj",
         "projectName": "plTest",
-        "projectPath": "C:\\Users\\mszub\\OneDrive\\Рабочий стол\\game\\plTest\\plTest\\plTest.csproj",
-        "packagesPath": "C:\\Users\\mszub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mszub\\OneDrive\\Рабочий стол\\game\\plTest\\plTest\\obj\\",
+        "projectPath": "C:\\code\\game_4s\\plTest\\plTest\\plTest.csproj",
+        "packagesPath": "C:\\Users\\akoza\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\game_4s\\plTest\\plTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mszub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\akoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
