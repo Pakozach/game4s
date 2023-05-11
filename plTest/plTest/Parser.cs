@@ -217,13 +217,13 @@ namespace plTest
                         return null;
                     case "DEF":
                         if (this.run((node as UnOpNode).operand, player) == 0)
-                            player.do_def(0);
+                            player.is_def_head = 1;
                         else
-                            player.do_def(1);
+                            player.is_def_body = 1;
                         //Console.WriteLine($"Доджим {this.run((node as UnOpNode).operand, player)}");
                         return null;
                     case "DODGE":
-                        player.do_dodge();
+                        player.is_dodge = 1;
                         //Console.WriteLine($"Доджим {this.run((node as UnOpNode).operand, player)}");
                         return null;
                     case "ATK":
