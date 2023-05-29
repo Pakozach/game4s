@@ -2,7 +2,6 @@
 using plTest.AST;
 using System;
 using static System.Formats.Asn1.AsnWriter;
-using System.Diagnostics;
 
 void print_hp(Character guy) 
 {
@@ -81,28 +80,9 @@ void read_file(string name)
     }
 }
 
-string readCode()
-{
-    Console.WriteLine("Input code file path");
-    string path = Console.ReadLine();
-    if (File.Exists(path))
-    {
-        string code = File.ReadAllText(path);
-        return code;
-    }
-    else
-    {
-        Console.WriteLine("File doesn't exist!");
-        throw new Exception("Invalid file");
-    }
-}
-
-
 read_file("Hello_Dialog.txt");
 Console.WriteLine("START!");
-string code = readCode();
 
-/*
 const string code =
 @" {
     IF(enemyheadhp > 0)
@@ -116,7 +96,6 @@ const string code =
     }
 "
 ;
-*/
 
 Lexer lexer = new Lexer(code);
 lexer.LexAnalizator();
@@ -137,4 +116,30 @@ for (int i = 0; i < 100; i++)
     lvl++;
 }
 
-Console.ReadKey();
+/* @" {   
+      sum := 39 - 29;
+sumtwo := (((10+(2+2)) + 6) * 2) +5;
+
+LOG sum;
+LOG sumtwo;
+
+IF(sum < 9)
+{
+xx:= 100;
+ATK(xx * 20);
+}
+ELSE
+{
+xx:= 20;
+DEF(xx * 5);
+}
+sum:=0;
+WHILE(sum<=10)
+{
+LOG sum;
+sum:=sum+1;
+}
+suma := sum+10;
+LOG suma;
+    }  
+" */

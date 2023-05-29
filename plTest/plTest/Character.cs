@@ -14,9 +14,10 @@ namespace plTest
         private double enemy_power;
         private int enemy_head;
         private int enemy_body;
-        public int is_def_head;
-        public int is_def_body;
-        public int is_dodge;
+        private int is_def_head;
+        private int is_def_body;
+        private int is_dodge;
+        private int mana;
 
         public Character(int hp_head, int hp_body, int enemy_head, int enemy_body, double power)
         {
@@ -29,6 +30,7 @@ namespace plTest
             this.is_def_head = 0;
             this.is_def_body = 0;
             this.is_dodge = 0;
+            this.mana = 5;
         }
 
         public int[] get_hp()
@@ -45,19 +47,35 @@ namespace plTest
 
         public void do_damage(int target, int power) // 1 - в голову 2 - в тело
         {
-            double proc = 1;
+            int mana = 1;
             if (power == 1)
-                proc = 2.5;
-            if (this.hp_head <= 0)
-                proc *= 0.5;
-            if (target == 0)
-                this.enemy_head -= (int)(this.damage * proc);
-            else
-                this.enemy_body -= (int)(this.damage * proc);
-            if (this.enemy_head < 0)
-                this.enemy_head = 0;
-            if (this.enemy_body < 0)
-                this.enemy_body = 0;
+                mana += 1;
+            if (this.is_enough_mana(mana) == 1)
+            {
+                double proc = 1;
+                if (power == 1)
+                    proc = 2.5;
+                if (this.hp_head <= 0)
+                    proc *= 0.5;
+                if (target == 0)
+                    this.enemy_head -= (int)(this.damage * proc);
+                else
+                    this.enemy_body -= (int)(this.damage * proc);
+                if (this.enemy_head < 0)
+                    this.enemy_head = 0;
+                if (this.enemy_body < 0)
+                    this.enemy_body = 0;
+            }
+        }
+
+        public int is_enough_mana(int a)
+        {
+            if (this.mana >= a)
+            {
+                this.mana -= a;
+                return 1;
+            } else
+                return 0;
         }
 
         public int is_dead() 
@@ -65,6 +83,21 @@ namespace plTest
             if (this.hp_body <= 0)
                 return 1;
             else return 0;
+        }
+
+        public void do_def(int target)
+        {
+            if (this.is_enough_mana(1) == 1)
+                if (target == 0)
+                    this.is_def_head = 1;
+                else
+                    this.is_def_body = 1;
+        }
+
+        public void do_dodge()
+        {
+            if (this.is_enough_mana(2) == 1)
+                this.is_dodge = 1;
         }
 
         public int enemy_dead()
@@ -119,6 +152,7 @@ namespace plTest
             this.is_def_head = 0;
             this.is_def_body = 0;
             this.is_dodge = 0;
+            this.mana = 5;
         }
     }
 }
